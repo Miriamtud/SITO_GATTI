@@ -1,0 +1,88 @@
+/*--- TESTO ---*/ 
+.descrizione {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px 0 30px 0;          /* Margine solo sopra e sotto */
+}
+
+.descrizione .introduzione {
+    width: 100%;
+    border-top: solid 1px #323232;
+    border-bottom: solid 1px #323232;
+}
+
+.descrizione .introduzione h4 {
+    font-size: 20px;
+    /* padding: 20px; */
+    line-height: 25px;
+}
+
+.descrizione .introduzione p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.punto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.punto h3 {
+    font-size: 24px;
+}
+
+.punto p {
+    width: 70%;
+}
+
+.punto p strong {
+    font-size: 24px;
+}
+
+.foto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto img {
+    width: 45%;
+}
+
+/* VERSIONE MOBILE */
+@media only screen and (max-width: 768px) {
+    .descrizione {
+        padding: 0;
+    }
+
+    .descrizione .introduzione h4 {
+        font-size: 18px;
+    }
+
+    .descrizione .introduzione p {
+        font-size: 14px;
+    }
+
+    .punto h3 {
+        font-size: 16px;
+    }
+
+    .punto p {
+        font-size: 14px;
+    }
+
+    .punto p strong {
+        font-size: 18px;
+    }
+
+    .foto {
+        flex-direction: column;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+
+
+}

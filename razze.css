@@ -1,0 +1,65 @@
+/*--- CARDS --- */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 30px 0 50px 0;          /* Margine solo sopra e sotto */
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: 5px solid #006f6d;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card .leggidipiu{
+    text-decoration: underline;
+}
+  
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* VERSIONE MOBILE */
+@media only screen and (max-width: 768px) {
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .descrizione {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descrizione .titolo, 
+    .descrizione .contenuto {
+        width: 100%;
+    }
+}
